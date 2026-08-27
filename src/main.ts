@@ -3,6 +3,19 @@ import logoUrl from "./assets/logo.png";
 import heroPoster from "./assets/hero-poster.jpg";
 import heroVideo from "./assets/hero.mp4";
 import firetruckUrl from "./assets/firetruck.jpg";
+import sigTouchfree from "./assets/sig-touchfree.jpg";
+import sigRinse from "./assets/sig-rinse.jpg";
+import sigUndercarriage from "./assets/sig-undercarriage.jpg";
+import sigFoam from "./assets/sig-foam.jpg";
+import sigWheel from "./assets/sig-wheel.jpg";
+
+const signatureImages: Record<string, string> = {
+  touchfree: sigTouchfree,
+  rinse: sigRinse,
+  undercarriage: sigUndercarriage,
+  foam: sigFoam,
+  wheel: sigWheel,
+};
 
 /** Point every logo <img data-logo> at the bundled asset URL. */
 function initLogos(): void {
@@ -19,6 +32,16 @@ function initFoundationImage(): void {
     .querySelectorAll<HTMLImageElement>("img[data-firetruck]")
     .forEach((img) => {
       img.src = firetruckUrl;
+    });
+}
+
+/** Point each signature-services slide <img data-sig> at its bundled photo. */
+function initSignatureImages(): void {
+  document
+    .querySelectorAll<HTMLImageElement>("img[data-sig]")
+    .forEach((img) => {
+      const key = img.dataset.sig;
+      if (key && signatureImages[key]) img.src = signatureImages[key];
     });
 }
 
@@ -103,6 +126,7 @@ function initNewsletter(): void {
 
 initLogos();
 initFoundationImage();
+initSignatureImages();
 initHeroVideo();
 initMenu();
 initCarousel();
