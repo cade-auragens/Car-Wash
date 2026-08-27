@@ -2,6 +2,7 @@ import "./style.css";
 import logoUrl from "./assets/logo.png";
 import heroPoster from "./assets/hero-poster.jpg";
 import heroVideo from "./assets/hero.mp4";
+import firetruckUrl from "./assets/firetruck.jpg";
 
 /** Point every logo <img data-logo> at the bundled asset URL. */
 function initLogos(): void {
@@ -9,6 +10,15 @@ function initLogos(): void {
     .querySelectorAll<HTMLImageElement>("img[data-logo]")
     .forEach((img) => {
       img.src = logoUrl;
+    });
+}
+
+/** Point the foundation <img data-firetruck> at the bundled asset URL. */
+function initFoundationImage(): void {
+  document
+    .querySelectorAll<HTMLImageElement>("img[data-firetruck]")
+    .forEach((img) => {
+      img.src = firetruckUrl;
     });
 }
 
@@ -92,6 +102,7 @@ function initNewsletter(): void {
 }
 
 initLogos();
+initFoundationImage();
 initHeroVideo();
 initMenu();
 initCarousel();

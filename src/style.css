@@ -843,13 +843,20 @@ section.blk {
   align-items: center;
 }
 .found-media {
+  position: relative;
   background: linear-gradient(135deg, var(--fire), var(--fire-dark));
   border-radius: 22px;
-  min-height: 300px;
-  display: grid;
-  place-items: center;
-  font-size: 128px;
+  min-height: 340px;
+  overflow: hidden;
   box-shadow: 0 24px 60px rgba(196, 30, 30, 0.35);
+}
+.found-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .found-body .eyebrow {
   color: var(--gold);
