@@ -365,12 +365,12 @@ const highlights = `    <section class="blk highlights-sec">
       <div class="wrap">
         <div class="sec-head"><div class="eyebrow">Explore Firehouse</div><h2>Everything a Clean Car Needs</h2></div>
         <div class="hl-grid">
-          <a class="hl" href="/plans"><div class="hl-ic">🚿</div><h3>Wash Plans</h3><p>Single washes and the unlimited V.I.P. Wash Club.</p><span class="hl-go">Explore ›</span></a>
-          <a class="hl" href="/locations"><div class="hl-ic">📍</div><h3>Locations</h3><p>Four spots across Leamington, Lakeshore &amp; Belle River.</p><span class="hl-go">Find us ›</span></a>
-          <a class="hl" href="/heroes"><div class="hl-ic">🎖️</div><h3>Heroes Discount</h3><p>20% off memberships &amp; 50% off your first wash.</p><span class="hl-go">See offers ›</span></a>
-          <a class="hl" href="/foundation"><div class="hl-ic">🚒</div><h3>The Foundation</h3><p>Giving back to local fire departments.</p><span class="hl-go">Learn more ›</span></a>
-          <a class="hl" href="/story"><div class="hl-ic">📖</div><h3>Our Story</h3><p>A local, family-run, firehouse-themed car wash.</p><span class="hl-go">Meet us ›</span></a>
-          <a class="hl" href="/community"><div class="hl-ic">🤝</div><h3>Community</h3><p>Family-friendly and proud to support our towns.</p><span class="hl-go">Get involved ›</span></a>
+          <a class="hl" href="/plans"><div class="hl-img"><img data-hl="plans" alt="Car wash plans" /></div><div class="hl-body"><h3>Wash Plans</h3><p>Single washes and the unlimited V.I.P. Wash Club.</p><span class="hl-go">Explore ›</span></div></a>
+          <a class="hl" href="/locations"><div class="hl-img"><img data-hl="locations" alt="Our car wash locations" /></div><div class="hl-body"><h3>Locations</h3><p>Four spots across Leamington, Lakeshore &amp; Belle River.</p><span class="hl-go">Find us ›</span></div></a>
+          <a class="hl" href="/heroes"><div class="hl-img"><img data-hl="heroes" alt="First responders" /></div><div class="hl-body"><h3>Heroes Discount</h3><p>20% off memberships &amp; 50% off your first wash.</p><span class="hl-go">See offers ›</span></div></a>
+          <a class="hl" href="/foundation"><div class="hl-img"><img data-hl="foundation" alt="Fire engine" /></div><div class="hl-body"><h3>The Foundation</h3><p>Giving back to local fire departments.</p><span class="hl-go">Learn more ›</span></div></a>
+          <a class="hl" href="/story"><div class="hl-img"><img data-hl="story" alt="A family-run car wash" /></div><div class="hl-body"><h3>Our Story</h3><p>A local, family-run, firehouse-themed car wash.</p><span class="hl-go">Meet us ›</span></div></a>
+          <a class="hl" href="/community"><div class="hl-img"><img data-hl="community" alt="Community volunteers" /></div><div class="hl-body"><h3>Community</h3><p>Family-friendly and proud to support our towns.</p><span class="hl-go">Get involved ›</span></div></a>
         </div>
       </div>
     </section>`;

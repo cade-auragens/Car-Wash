@@ -32,6 +32,15 @@ const communityImages: Record<string, string> = {
   volunteers: commVolunteers,
 };
 
+const highlightImages: Record<string, string> = {
+  plans: sigFoam,
+  locations: sigTouchfree,
+  heroes: commFirefighters,
+  foundation: firetruckUrl,
+  story: commFamily,
+  community: commVolunteers,
+};
+
 /** Point every logo <img data-logo> at the bundled asset URL. */
 function initLogos(): void {
   document
@@ -58,6 +67,14 @@ function initSignatureImages(): void {
       const key = img.dataset.sig;
       if (key && signatureImages[key]) img.src = signatureImages[key];
     });
+}
+
+/** Point each home highlight-card <img data-hl> at its bundled photo. */
+function initHighlightImages(): void {
+  document.querySelectorAll<HTMLImageElement>("img[data-hl]").forEach((img) => {
+    const key = img.dataset.hl;
+    if (key && highlightImages[key]) img.src = highlightImages[key];
+  });
 }
 
 /** Point each community-card <img data-comm> at its bundled photo. */
@@ -195,6 +212,7 @@ function initContactForm(): void {
 initLogos();
 initFoundationImage();
 initSignatureImages();
+initHighlightImages();
 initCommunityImages();
 initMembership();
 initHeroVideo();
