@@ -20,7 +20,7 @@ const header = (active) => `    <div class="topbar">
           <span>📞 (519) 990 6431</span>
         </div>
         <div class="r">
-          <span>🕖 Open 7 Days · 7 AM – 8 PM</span>
+          <span>🕖 Self-Serve &amp; IBA 24 Hrs · Express Tunnels 7 AM – 8 PM</span>
           <a href="/locations">📍 4 Locations</a>
         </div>
       </div>
@@ -78,8 +78,9 @@ const footer = () => `    <footer>
           <ul>
             <li><a href="tel:15197966323">(519) 796 6323</a></li>
             <li><a href="tel:15199906431">(519) 990 6431</a></li>
+            <li><a href="mailto:firehallcarwash@gmail.com">firehallcarwash@gmail.com</a></li>
             <li>134 Talbot St E, Leamington</li>
-            <li>Open 7 days · 7 AM – 8 PM</li>
+            <li>Self-serve &amp; IBA 24 hrs · Express 7 AM – 8 PM</li>
           </ul>
         </div>
       </div>
@@ -449,8 +450,9 @@ const contactBody = `    <section class="contact-logo">
         <div class="info-card">
           <h4>Visit Fire House Car Wash</h4>
           <div class="line"><span class="k">Phone</span><span><a href="tel:15197966323">(519) 796 6323</a> · <a href="tel:15199906431">(519) 990 6431</a></span></div>
+          <div class="line"><span class="k">Email</span><span><a href="mailto:firehallcarwash@gmail.com">firehallcarwash@gmail.com</a></span></div>
           <div class="line"><span class="k">Address</span><span>134 Talbot St E, Leamington, ON N8H 1L7</span></div>
-          <div class="line"><span class="k">Hours</span><span>Open 7 days a week · 7:00 AM – 8:00 PM</span></div>
+          <div class="line"><span class="k">Hours</span><span>Self-serve &amp; IBA open 24 hours · Express tunnels 7:00 AM – 8:00 PM</span></div>
           <div class="line"><span class="k">On site</span><span>Self-serve bays · Power vacuums · Coin &amp; card payment</span></div>
         </div>
       </div>
