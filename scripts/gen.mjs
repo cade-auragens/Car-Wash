@@ -269,10 +269,10 @@ const whyBand = `    <section class="why blk" id="why">
       <div class="wrap">
         <div class="sec-head"><div class="eyebrow">Why Choose Us</div><h2>A Wash for Every Need</h2></div>
         <div class="why-grid">
-          <div class="why-cell"><div class="ic">🚫</div><h3>Touch-Free Technology</h3><p>Gentle on your vehicle, tough on dirt.</p></div>
-          <div class="why-cell"><div class="ic">💧</div><h3>Spot-Free Rinse</h3><p>Leaves your car spotless and shiny.</p></div>
-          <div class="why-cell"><div class="ic">⚡</div><h3>Powerful Undercarriage</h3><p>Blasts away road grime and salt.</p></div>
-          <div class="why-cell"><div class="ic">⏱</div><h3>Fast &amp; Convenient</h3><p>Quality clean in just minutes.</p></div>
+          <div class="why-cell"><div class="why-img"><img data-sig="touchfree" alt="Touch-free foam wash" /></div><div class="why-body"><h3>Touch-Free Technology</h3><p>Gentle on your vehicle, tough on dirt.</p></div></div>
+          <div class="why-cell"><div class="why-img"><img data-sig="rinse" alt="Spot-free water rinse" /></div><div class="why-body"><h3>Spot-Free Rinse</h3><p>Leaves your car spotless and shiny.</p></div></div>
+          <div class="why-cell"><div class="why-img"><img data-sig="undercarriage" alt="High-pressure undercarriage wash" /></div><div class="why-body"><h3>Powerful Undercarriage</h3><p>Blasts away road grime and salt.</p></div></div>
+          <div class="why-cell"><div class="why-img"><img data-sig="foam" alt="A quick, thorough clean" /></div><div class="why-body"><h3>Fast &amp; Convenient</h3><p>Quality clean in just minutes.</p></div></div>
         </div>
       </div>
     </section>`;
@@ -406,10 +406,10 @@ const storyBody = `${pageHead("Our Story", "Built by Locals, for Locals", "A fam
 const communityBody = `${pageHead("Community", "Proud to Serve Our Towns", "Family-friendly, community-first, and always giving back to the people who keep us safe.")}
     <section class="blk">
       <div class="wrap community-grid">
-        <div class="comm-card"><div class="comm-ic">👨‍👩‍👧‍👦</div><h3>Family Friendly</h3><p>Our firehouse theme is built for families — a car wash the kids actually get excited about. Fast, fun, and spotless every time.</p></div>
-        <div class="comm-card"><div class="comm-ic">🚒</div><h3>Backing Local Fire Departments</h3><p>Through the <a href="/foundation" style="color:var(--fire);font-weight:600">Firehouse Foundation</a>, we give back a portion of every wash to the fire departments in the towns we serve.</p></div>
-        <div class="comm-card"><div class="comm-ic">🎖️</div><h3>Thanking First Responders</h3><p>Firefighters, EMS, military, veterans, and healthcare workers get <a href="/heroes" style="color:var(--fire);font-weight:600">special discounts</a> as our way of saying thank you.</p></div>
-        <div class="comm-card"><div class="comm-ic">🤝</div><h3>Out in the Community</h3><p>From local events to neighbourhood fundraisers, we love showing up for Leamington, Lakeshore, and Belle River.</p></div>
+        <div class="comm-card"><div class="comm-img"><img data-comm="family" alt="A happy family" /></div><div class="comm-body"><h3>Family Friendly</h3><p>Our firehouse theme is built for families — a car wash the kids actually get excited about. Fast, fun, and spotless every time.</p></div></div>
+        <div class="comm-card"><div class="comm-img"><img data-comm="fire" alt="A red fire engine" /></div><div class="comm-body"><h3>Backing Local Fire Departments</h3><p>Through the <a href="/foundation" style="color:var(--fire);font-weight:600">Firehouse Foundation</a>, we give back a portion of every wash to the fire departments in the towns we serve.</p></div></div>
+        <div class="comm-card"><div class="comm-img"><img data-comm="responders" alt="Firefighters in gear" /></div><div class="comm-body"><h3>Thanking First Responders</h3><p>Firefighters, EMS, military, veterans, and healthcare workers get <a href="/heroes" style="color:var(--fire);font-weight:600">special discounts</a> as our way of saying thank you.</p></div></div>
+        <div class="comm-card"><div class="comm-img"><img data-comm="volunteers" alt="Community volunteers handing out aid" /></div><div class="comm-body"><h3>Out in the Community</h3><p>From local events to neighbourhood fundraisers, we love showing up for Leamington, Lakeshore, and Belle River.</p></div></div>
       </div>
     </section>
 

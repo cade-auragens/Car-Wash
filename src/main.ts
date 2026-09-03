@@ -8,6 +8,9 @@ import sigRinse from "./assets/sig-rinse.jpg";
 import sigUndercarriage from "./assets/sig-undercarriage.jpg";
 import sigFoam from "./assets/sig-foam.jpg";
 import sigWheel from "./assets/sig-wheel.jpg";
+import commFamily from "./assets/comm-family.jpg";
+import commFirefighters from "./assets/comm-firefighters.jpg";
+import commVolunteers from "./assets/comm-volunteers.jpg";
 import {
   STRIPE_PAYMENT_LINK,
   STRIPE_PORTAL_LINK,
@@ -20,6 +23,13 @@ const signatureImages: Record<string, string> = {
   undercarriage: sigUndercarriage,
   foam: sigFoam,
   wheel: sigWheel,
+};
+
+const communityImages: Record<string, string> = {
+  family: commFamily,
+  fire: firetruckUrl,
+  responders: commFirefighters,
+  volunteers: commVolunteers,
 };
 
 /** Point every logo <img data-logo> at the bundled asset URL. */
@@ -47,6 +57,16 @@ function initSignatureImages(): void {
     .forEach((img) => {
       const key = img.dataset.sig;
       if (key && signatureImages[key]) img.src = signatureImages[key];
+    });
+}
+
+/** Point each community-card <img data-comm> at its bundled photo. */
+function initCommunityImages(): void {
+  document
+    .querySelectorAll<HTMLImageElement>("img[data-comm]")
+    .forEach((img) => {
+      const key = img.dataset.comm;
+      if (key && communityImages[key]) img.src = communityImages[key];
     });
 }
 
@@ -175,6 +195,7 @@ function initContactForm(): void {
 initLogos();
 initFoundationImage();
 initSignatureImages();
+initCommunityImages();
 initMembership();
 initHeroVideo();
 initMenu();

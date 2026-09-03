@@ -1416,3 +1416,44 @@ nav.main a.link.active {
     grid-template-columns: 1fr;
   }
 }
+
+/* image bands on Why-Choose-Us + Community cards */
+.why-cell {
+  padding: 0;
+  overflow: hidden;
+}
+.why-img {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.why-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.why-body {
+  padding: 24px 22px 28px;
+}
+
+.comm-card {
+  padding: 0;
+  overflow: hidden;
+}
+.comm-img {
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+}
+.comm-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.comm-body {
+  padding: 30px 30px 32px;
+}
