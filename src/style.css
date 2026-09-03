@@ -1481,3 +1481,68 @@ nav.main a.link.active {
   flex-direction: column;
   flex: 1;
 }
+
+/* contact page: full-height logo splash */
+.contact-logo {
+  min-height: 86vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 22%, #1c1214 0%, #0a0b0d 68%);
+}
+.contact-logo .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-logo-img {
+  width: min(62vw, 640px);
+  height: auto;
+  filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.6));
+}
+.contact-logo-sub {
+  margin-top: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: clamp(15px, 1.6vw, 19px);
+  letter-spacing: 0.02em;
+  color: #cfcac4;
+}
+.scroll-cue {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  text-decoration: none;
+  animation: cueBounce 1.6s ease-in-out infinite;
+}
+.scroll-cue:hover {
+  border-color: var(--fire);
+  color: var(--fire);
+}
+@keyframes cueBounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue {
+    animation: none;
+  }
+}

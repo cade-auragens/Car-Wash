@@ -423,8 +423,14 @@ const communityBody = `${pageHead("Community", "Proud to Serve Our Towns", "Fami
     </section>`;
 
 // ---------- contact ----------
-const contactBody = `${pageHead("Contact", "Ready When You Are", "Questions about a wash, a location, or a membership? Send us a note or give us a call.")}
-    <section class="blk">
+const contactBody = `    <section class="contact-logo">
+      <div class="wrap">
+        <img data-logo class="contact-logo-img" alt="Firehouse Carwash" />
+        <p class="contact-logo-sub">Ready when you are — scroll down to get in touch.</p>
+        <a href="#contact-form" class="scroll-cue" aria-label="Scroll to the contact form">↓</a>
+      </div>
+    </section>
+    <section class="blk" id="contact-form">
       <div class="wrap contact-grid">
         <div class="cform-wrap">
           <h2>Send Us a Message</h2>
