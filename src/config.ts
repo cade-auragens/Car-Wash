@@ -18,3 +18,7 @@
 
 export const STRIPE_PAYMENT_LINK = "";
 export const STRIPE_PORTAL_LINK = "";
+
+// Where the Contact form sends messages. The form opens the visitor's email
+// app pre-addressed to this inbox. Change it or swap in a JotForm embed later.
+export const CONTACT_EMAIL = "jemsholdingsinc@gmail.com";

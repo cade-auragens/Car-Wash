@@ -8,7 +8,11 @@ import sigRinse from "./assets/sig-rinse.jpg";
 import sigUndercarriage from "./assets/sig-undercarriage.jpg";
 import sigFoam from "./assets/sig-foam.jpg";
 import sigWheel from "./assets/sig-wheel.jpg";
-import { STRIPE_PAYMENT_LINK, STRIPE_PORTAL_LINK } from "./config";
+import {
+  STRIPE_PAYMENT_LINK,
+  STRIPE_PORTAL_LINK,
+  CONTACT_EMAIL,
+} from "./config";
 
 const signatureImages: Record<string, string> = {
   touchfree: sigTouchfree,
@@ -145,6 +149,29 @@ function initNewsletter(): void {
   });
 }
 
+/** Contact form → opens the visitor's email app addressed to CONTACT_EMAIL. */
+function initContactForm(): void {
+  const form = document.querySelector<HTMLFormElement>("#cform");
+  if (!form) return;
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const val = (k: string): string => String(data.get(k) ?? "");
+    const subject = `Website enquiry from ${val("name")}`;
+    const body =
+      `Name: ${val("name")}\n` +
+      `Email: ${val("email")}\n` +
+      `Phone: ${val("phone")}\n` +
+      `Location: ${val("location")}\n\n` +
+      val("message");
+    window.location.href =
+      `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+    const done = document.querySelector<HTMLElement>("#cformDone");
+    if (done) done.style.display = "block";
+  });
+}
+
 initLogos();
 initFoundationImage();
 initSignatureImages();
@@ -153,3 +180,4 @@ initHeroVideo();
 initMenu();
 initCarousel();
 initNewsletter();
+initContactForm();
