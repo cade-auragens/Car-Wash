@@ -13,7 +13,6 @@ export default defineConfig({
         main: "index.html",
         plans: "plans.html",
         locations: "locations.html",
-        heroes: "heroes.html",
         foundation: "foundation.html",
         story: "story.html",
         community: "community.html",

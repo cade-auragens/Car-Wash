@@ -6,8 +6,7 @@ import { writeFileSync } from "node:fs";
 const NAV = [
   { label: "Wash Plans", href: "/plans", key: "plans" },
   { label: "Locations", href: "/locations", key: "locations" },
-  { label: "Heroes", href: "/heroes", key: "heroes" },
-  { label: "Foundation", href: "/foundation", key: "foundation" },
+  { label: "Heroes & Foundation", href: "/foundation", key: "foundation" },
   { label: "Our Story", href: "/story", key: "story" },
   { label: "Community", href: "/community", key: "community" },
   { label: "Contact", href: "/contact", key: "contact" },
@@ -20,8 +19,7 @@ const header = (active) => `    <div class="topbar">
           <span>📞 (519) 990 6431</span>
         </div>
         <div class="r">
-          <span>🕖 Self-Serve &amp; IBA 24 Hrs · Express Tunnels 7 AM – 8 PM</span>
-          <a href="/locations">📍 4 Locations</a>
+          <span>🕖 Self-Serve 24/7 · Express 7 AM – 8 PM</span>
         </div>
       </div>
     </div>
@@ -60,8 +58,7 @@ const footer = () => `    <footer>
           <ul>
             <li><a href="/plans">Wash Plans</a></li>
             <li><a href="/locations">Locations</a></li>
-            <li><a href="/heroes">Heroes Discount</a></li>
-            <li><a href="/foundation">The Foundation</a></li>
+            <li><a href="/foundation">Heroes &amp; Foundation</a></li>
           </ul>
         </div>
         <div>
@@ -372,8 +369,7 @@ const highlights = `    <section class="blk highlights-sec">
         <div class="hl-grid">
           <a class="hl" href="/plans"><div class="hl-img"><img data-hl="plans" alt="Car wash plans" /></div><div class="hl-body"><h3>Wash Plans</h3><p>Single washes and the unlimited Wash Club.</p><span class="hl-go">Explore ›</span></div></a>
           <a class="hl" href="/locations"><div class="hl-img"><img data-hl="locations" alt="Our car wash locations" /></div><div class="hl-body"><h3>Locations</h3><p>Four spots across Leamington, Lakeshore &amp; Belle River.</p><span class="hl-go">Find us ›</span></div></a>
-          <a class="hl" href="/heroes"><div class="hl-img"><img data-hl="heroes" alt="First responders" /></div><div class="hl-body"><h3>Heroes Discount</h3><p>20% off memberships &amp; 50% off your first wash.</p><span class="hl-go">See offers ›</span></div></a>
-          <a class="hl" href="/foundation"><div class="hl-img"><img data-hl="foundation" alt="Fire engine" /></div><div class="hl-body"><h3>The Foundation</h3><p>Giving back to local fire departments.</p><span class="hl-go">Learn more ›</span></div></a>
+          <a class="hl" href="/foundation"><div class="hl-img"><img data-hl="foundation" alt="Fire engine" /></div><div class="hl-body"><h3>Heroes &amp; Foundation</h3><p>First-responder discounts and giving back to local fire departments.</p><span class="hl-go">Learn more ›</span></div></a>
           <a class="hl" href="/story"><div class="hl-img"><img data-hl="story" alt="A family-run car wash" /></div><div class="hl-body"><h3>Our Story</h3><p>A local, family-run, firehouse-themed car wash.</p><span class="hl-go">Meet us ›</span></div></a>
           <a class="hl" href="/community"><div class="hl-img"><img data-hl="community" alt="Community volunteers" /></div><div class="hl-body"><h3>Community</h3><p>Family-friendly and proud to support our towns.</p><span class="hl-go">Get involved ›</span></div></a>
         </div>
@@ -411,7 +407,7 @@ const communityBody = `${pageHead("Community", "Proud to Serve Our Towns", "Fami
       <div class="wrap community-grid">
         <div class="comm-card"><div class="comm-img"><img data-comm="family" alt="A happy family" /></div><div class="comm-body"><h3>Family Friendly</h3><p>Our firehouse theme is built for families — a car wash the kids actually get excited about. Fast, fun, and spotless every time.</p></div></div>
         <div class="comm-card"><div class="comm-img"><img data-comm="fire" alt="A red fire engine" /></div><div class="comm-body"><h3>Backing Local Fire Departments</h3><p>Through the <a href="/foundation" style="color:var(--fire);font-weight:600">Firehouse Foundation</a>, we give back a portion of every wash to the fire departments in the towns we serve.</p></div></div>
-        <div class="comm-card"><div class="comm-img"><img data-comm="responders" alt="Firefighters in gear" /></div><div class="comm-body"><h3>Thanking First Responders</h3><p>Firefighters, EMS, military, veterans, and healthcare workers get <a href="/heroes" style="color:var(--fire);font-weight:600">special discounts</a> as our way of saying thank you.</p></div></div>
+        <div class="comm-card"><div class="comm-img"><img data-comm="responders" alt="Firefighters in gear" /></div><div class="comm-body"><h3>Thanking First Responders</h3><p>Firefighters, EMS, military, veterans, and healthcare workers get <a href="/foundation" style="color:var(--fire);font-weight:600">special discounts</a> as our way of saying thank you.</p></div></div>
         <div class="comm-card"><div class="comm-img"><img data-comm="volunteers" alt="Community volunteers handing out aid" /></div><div class="comm-body"><h3>Out in the Community</h3><p>From local events to neighbourhood fundraisers, we love showing up for Leamington, Lakeshore, and Belle River.</p></div></div>
       </div>
     </section>
@@ -468,7 +464,7 @@ const pages = {
     title: "Firehouse Carwash | A Clean Car Says a Lot — Leamington, Lakeshore & Belle River",
     desc: "Firehouse Carwash — self-serve bays, touch-free automatics, and power vacuums across Leamington, Lakeshore & Belle River. First-responder discounts and an unlimited wash club.",
     active: "home",
-    body: `${homeHero}\n\n${finder}\n\n${highlights}\n\n${reviewsBand}\n\n${insiderBand}`,
+    body: `${homeHero}\n\n${highlights}\n\n${reviewsBand}\n\n${insiderBand}`,
   }),
   "plans.html": shell({
     title: "Wash Plans & Membership | Firehouse Carwash",
@@ -482,17 +478,11 @@ const pages = {
     active: "locations",
     body: `${pageHead("Locations", "Four Ways to Get a Spotless Ride", "Open seven days a week with power vacuums on site.")}\n\n${finder}\n\n${locationsBand}\n\n${whyBand}`,
   }),
-  "heroes.html": shell({
-    title: "First Responder Discounts | Firehouse Carwash",
-    desc: "20% off memberships and 50% off your first wash for firefighters, EMS, active military, veterans, and doctors & nurses.",
-    active: "heroes",
-    body: `${pageHead("Heroes Discount", "We Back Our Heroes", "A thank-you to the people who keep our communities safe and healthy.")}\n\n${heroesBand}`,
-  }),
   "foundation.html": shell({
-    title: "The Firehouse Foundation | Giving Back to Local Fire Departments",
-    desc: "The Firehouse Foundation gives back a portion of every wash to support local fire departments in Leamington, Lakeshore, and Belle River.",
+    title: "Heroes & The Firehouse Foundation | Firehouse Carwash",
+    desc: "First-responder discounts and the Firehouse Foundation — giving back to the local fire departments in Leamington, Lakeshore, and Belle River.",
     active: "foundation",
-    body: `${pageHead("The Foundation", "Making a Difference", "Giving back to the local fire departments in the communities we call home.")}\n\n${foundationBand}\n\n${heroesBand}`,
+    body: `${pageHead("Heroes & Foundation", "We Back Our Heroes", "First-responder discounts — and giving back to the local fire departments in every town we serve.")}\n\n${heroesBand}\n\n${foundationBand}`,
   }),
   "story.html": shell({
     title: "Our Story | Firehouse Carwash",
