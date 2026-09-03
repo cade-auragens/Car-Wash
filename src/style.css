@@ -159,12 +159,12 @@ img {
 
 /* header */
 header {
-  background: #fff;
+  background: var(--ink);
   position: sticky;
   top: 0;
   z-index: 60;
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 2px 14px rgba(15, 15, 17, 0.05);
+  border-bottom: 3px solid var(--fire);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
 }
 header .wrap {
   display: flex;
@@ -190,7 +190,7 @@ nav.main {
 nav.main a.link {
   font-family: "Poppins";
   font-weight: 500;
-  color: var(--ink);
+  color: var(--chrome);
   font-size: 15px;
 }
 nav.main a.link:hover {
@@ -200,7 +200,7 @@ nav.main a.link:hover {
   display: none;
   background: none;
   border: 0;
-  color: var(--ink);
+  color: #fff;
   font-size: 26px;
   cursor: pointer;
 }
@@ -1108,12 +1108,12 @@ footer a:hover {
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--ink);
     flex-direction: column;
     padding: 18px 24px;
     gap: 16px;
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    border-bottom: 3px solid var(--fire);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
   }
   nav.main.open {
     display: flex;
