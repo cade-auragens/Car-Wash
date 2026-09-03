@@ -1546,3 +1546,73 @@ nav.main a.link.active {
     animation: none;
   }
 }
+
+/* ===== alarm-badge pricing cards ===== */
+.plan {
+  --alarm: var(--fire);
+}
+.plan:nth-child(1) {
+  --alarm: #efb63c; /* 1 Alarm — gold */
+}
+.plan:nth-child(2) {
+  --alarm: #e8722e; /* 2 Alarm — orange */
+}
+.plan:nth-child(3) {
+  --alarm: #e0392b; /* 3 Alarm — red */
+}
+.plan:nth-child(4) {
+  --alarm: #2b6fbf; /* 3 Alarm+ — blue */
+}
+/* normalize the old dark VIP body to a clean white card */
+.plan.vip {
+  background: #fff;
+  color: var(--ink);
+}
+.plan.vip .plan-top {
+  border-bottom-color: var(--alarm);
+}
+.plan-top {
+  background: #131417;
+  color: #fff;
+  text-align: center;
+  padding: 24px 20px 20px;
+  border-bottom: 6px solid var(--alarm);
+  position: relative;
+}
+.plan-top h3,
+.plan.vip .plan-top h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 24px;
+}
+.plan-top .price,
+.plan.vip .price {
+  color: var(--alarm);
+  margin-top: 8px;
+}
+.plan-body .f::before,
+.plan.vip .plan-body .f::before {
+  color: var(--alarm);
+}
+.plan.vip .plan-body .f {
+  color: #2c2c30;
+}
+/* "Unlimited" flag on the top 3 Alarm+ tier */
+.plan.vip .plan-top::after {
+  content: "Unlimited";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--alarm);
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+}
