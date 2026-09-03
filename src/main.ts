@@ -8,6 +8,7 @@ import sigRinse from "./assets/sig-rinse.jpg";
 import sigUndercarriage from "./assets/sig-undercarriage.jpg";
 import sigFoam from "./assets/sig-foam.jpg";
 import sigWheel from "./assets/sig-wheel.jpg";
+import { STRIPE_PAYMENT_LINK, STRIPE_PORTAL_LINK } from "./config";
 
 const signatureImages: Record<string, string> = {
   touchfree: sigTouchfree,
@@ -58,6 +59,26 @@ function initHeroVideo(): void {
   };
   video.addEventListener("loadeddata", tryPlay);
   tryPlay();
+}
+
+/**
+ * Point the membership CTAs at the Stripe hosted links once they're set in
+ * config.ts. Until then, buttons keep their in-page anchors and the member
+ * login link stays hidden.
+ */
+function initMembership(): void {
+  if (STRIPE_PAYMENT_LINK) {
+    document
+      .querySelectorAll<HTMLAnchorElement>('[data-cta="join"]')
+      .forEach((a) => {
+        a.href = STRIPE_PAYMENT_LINK;
+      });
+  }
+  const login = document.querySelector<HTMLAnchorElement>('[data-cta="login"]');
+  if (login && STRIPE_PORTAL_LINK) {
+    login.href = STRIPE_PORTAL_LINK;
+    login.hidden = false;
+  }
 }
 
 /** Mobile hamburger menu. */
@@ -127,6 +148,7 @@ function initNewsletter(): void {
 initLogos();
 initFoundationImage();
 initSignatureImages();
+initMembership();
 initHeroVideo();
 initMenu();
 initCarousel();
