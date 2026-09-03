@@ -36,7 +36,7 @@ ${NAV.map(
 ).join("\n")}
           <a class="link" id="memberLogin" data-cta="login" href="/plans" hidden>Member Login</a>
           <a class="btn btn-primary btn-sm" data-cta="join" href="/plans">
-            <span class="star">✦</span> Join V.I.P.
+            <span class="star">✦</span> Join the Club
           </a>
         </nav>
         <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
@@ -70,7 +70,7 @@ const footer = () => `    <footer>
             <li><a href="/story">Our Story</a></li>
             <li><a href="/community">Community</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="/plans">Join V.I.P.</a></li>
+            <li><a href="/plans">Join the Club</a></li>
           </ul>
         </div>
         <div>
@@ -146,7 +146,7 @@ const clubBand = `    <section class="club blk" id="club">
       <div class="wrap">
         <div class="club-card">
           <div class="kicker">Unlimited Monthly Wash</div>
-          <h3>Join the V.I.P. Wash Club</h3>
+          <h3>Join the Unlimited Wash Club</h3>
           <div class="big">$25<span style="font-size: 18px; font-weight: 600">/mo</span></div>
           <p>Your new favorite membership. Wash as often as you like for one flat monthly price at any Firehouse location.</p>
           <ul>
@@ -162,9 +162,9 @@ const clubBand = `    <section class="club blk" id="club">
           <h3>Buy a Single Wash</h3>
           <p>Prefer to pay as you go? Pick your level of shine — from a quick Basic rinse to the full Ultimate treatment.</p>
           <ul>
-            <li>Basic Wash — $10</li>
-            <li>Deluxe Wash — $14 · most popular</li>
-            <li>Ultimate Wash — $18</li>
+            <li>1 Alarm — $10</li>
+            <li>2 Alarm — $14 · most popular</li>
+            <li>3 Alarm — $18</li>
           </ul>
           <a class="btn btn-primary" href="#pricing">Select Your Wash <span class="arw">›</span></a>
         </div>
@@ -180,7 +180,7 @@ const pricingBand = `    <section class="pricing blk" id="pricing">
         </div>
         <div class="plan-grid">
           <div class="plan">
-            <div class="plan-top"><h3>Basic Wash</h3><div class="price">$10</div></div>
+            <div class="plan-top"><h3>1 Alarm</h3><div class="price">$10</div></div>
             <div class="plan-body">
               <div class="f">High-pressure soap</div>
               <div class="f">High-pressure rinse</div>
@@ -190,7 +190,7 @@ const pricingBand = `    <section class="pricing blk" id="pricing">
           </div>
           <div class="plan featured">
             <div class="ribbon">Most Popular</div>
-            <div class="plan-top"><h3>Deluxe Wash</h3><div class="price">$14</div></div>
+            <div class="plan-top"><h3>2 Alarm</h3><div class="price">$14</div></div>
             <div class="plan-body">
               <div class="f">High-pressure soap</div>
               <div class="f">High-pressure rinse</div>
@@ -201,7 +201,7 @@ const pricingBand = `    <section class="pricing blk" id="pricing">
             <div class="plan-foot"><a class="btn btn-primary btn-sm" href="/locations">Get This Wash</a></div>
           </div>
           <div class="plan">
-            <div class="plan-top"><h3>Ultimate Wash</h3><div class="price">$18</div></div>
+            <div class="plan-top"><h3>3 Alarm</h3><div class="price">$18</div></div>
             <div class="plan-body">
               <div class="f">High-pressure soap</div>
               <div class="f">High-pressure rinse</div>
@@ -213,14 +213,14 @@ const pricingBand = `    <section class="pricing blk" id="pricing">
             <div class="plan-foot"><a class="btn btn-dark btn-sm" href="/locations">Get This Wash</a></div>
           </div>
           <div class="plan vip">
-            <div class="plan-top"><h3>V.I.P. Wash</h3><div class="price">$25</div></div>
+            <div class="plan-top"><h3>3 Alarm+</h3><div class="price">$25</div></div>
             <div class="plan-body">
-              <div class="f">Everything in Ultimate</div>
+              <div class="f">Everything in 3 Alarm</div>
               <div class="f">Undercarriage rinse</div>
               <div class="f">Unlimited monthly carwash</div>
               <div class="f">Bring a friend &amp; wash</div>
             </div>
-            <div class="plan-foot"><a class="btn btn-gold btn-sm" data-cta="join" href="/plans">Join V.I.P.</a></div>
+            <div class="plan-foot"><a class="btn btn-gold btn-sm" data-cta="join" href="/plans">Join the Club</a></div>
           </div>
         </div>
         <p class="plan-note">Prices vary slightly by location. Touch-free automatic (Ultimate $17 · Value $15 · Basic $13) available at our Car Wash location.</p>
@@ -285,7 +285,7 @@ const heroesBand = `    <section class="heroes blk" id="heroes">
           <p>A thank-you to the people who keep our communities safe and healthy.</p>
         </div>
         <div class="hero-offers">
-          <div class="offer"><div class="pct">20% OFF</div><h3>Memberships</h3><p>Save 20% on any V.I.P. Wash Club membership, every month.</p></div>
+          <div class="offer"><div class="pct">20% OFF</div><h3>Memberships</h3><p>Save 20% on any Unlimited Wash Club membership, every month.</p></div>
           <div class="offer"><div class="pct">50% OFF</div><h3>Your First Car Wash</h3><p>Half off your very first wash with valid proof of employment.</p></div>
         </div>
         <div class="who-badges">
@@ -332,7 +332,7 @@ const insiderBand = `    <section class="insider blk" id="insider">
       <div class="wrap">
         <div class="eyebrow" style="color: #ffd9d2">Stay in the Loop</div>
         <h2>Become a Firehouse Insider</h2>
-        <p>Join our mailing list for news, exclusive offers, and V.I.P. promotions across all four locations.</p>
+        <p>Join our mailing list for news, exclusive offers, and member promotions across all four locations.</p>
         <form class="nl-form" id="nlForm">
           <input type="email" required placeholder="Enter your email address" aria-label="Email address" />
           <button class="btn btn-dark" type="submit">Join the List <span class="arw">›</span></button>
@@ -354,7 +354,7 @@ const homeHero = `    <section class="hero" id="top">
           <h1>A Clean Car<br />Says a Lot</h1>
           <p>Self-serve bays, touch-free automatics, and power vacuums across Leamington, Lakeshore &amp; Belle River — open seven days a week.</p>
           <div class="btns">
-            <a class="btn btn-primary" data-cta="join" href="/plans"><span class="star">✦</span> Join V.I.P. Wash Club <span class="arw">›</span></a>
+            <a class="btn btn-primary" data-cta="join" href="/plans"><span class="star">✦</span> Join the Unlimited Wash Club <span class="arw">›</span></a>
             <a class="btn btn-ghost" href="/locations">Find a Location</a>
           </div>
         </div>
@@ -365,7 +365,7 @@ const highlights = `    <section class="blk highlights-sec">
       <div class="wrap">
         <div class="sec-head"><div class="eyebrow">Explore Firehouse</div><h2>Everything a Clean Car Needs</h2></div>
         <div class="hl-grid">
-          <a class="hl" href="/plans"><div class="hl-img"><img data-hl="plans" alt="Car wash plans" /></div><div class="hl-body"><h3>Wash Plans</h3><p>Single washes and the unlimited V.I.P. Wash Club.</p><span class="hl-go">Explore ›</span></div></a>
+          <a class="hl" href="/plans"><div class="hl-img"><img data-hl="plans" alt="Car wash plans" /></div><div class="hl-body"><h3>Wash Plans</h3><p>Single washes and the unlimited Wash Club.</p><span class="hl-go">Explore ›</span></div></a>
           <a class="hl" href="/locations"><div class="hl-img"><img data-hl="locations" alt="Our car wash locations" /></div><div class="hl-body"><h3>Locations</h3><p>Four spots across Leamington, Lakeshore &amp; Belle River.</p><span class="hl-go">Find us ›</span></div></a>
           <a class="hl" href="/heroes"><div class="hl-img"><img data-hl="heroes" alt="First responders" /></div><div class="hl-body"><h3>Heroes Discount</h3><p>20% off memberships &amp; 50% off your first wash.</p><span class="hl-go">See offers ›</span></div></a>
           <a class="hl" href="/foundation"><div class="hl-img"><img data-hl="foundation" alt="Fire engine" /></div><div class="hl-body"><h3>The Foundation</h3><p>Giving back to local fire departments.</p><span class="hl-go">Learn more ›</span></div></a>
@@ -392,9 +392,9 @@ const storyBody = `${pageHead("Our Story", "Built by Locals, for Locals", "A fam
 
     <section class="team blk" style="background:var(--smoke)">
       <div class="wrap">
-        <div class="sec-head"><div class="eyebrow">Meet the Team</div><h2>The People Behind Firehouse</h2><p>Questions about a wash, a location, or a V.I.P. membership? These are the folks who can help.</p></div>
+        <div class="sec-head"><div class="eyebrow">Meet the Team</div><h2>The People Behind Firehouse</h2><p>Questions about a wash, a location, or a membership? These are the folks who can help.</p></div>
         <div class="team-grid">
-          <div class="team-card"><div class="team-avatar">JW</div><h3>Jeff</h3><div class="team-role">Owner / Operator</div><p>Happy to help with anything from wash packages to V.I.P. memberships across all four locations.</p></div>
+          <div class="team-card"><div class="team-avatar">JW</div><h3>Jeff</h3><div class="team-role">Owner / Operator</div><p>Happy to help with anything from wash packages to memberships across all four locations.</p></div>
           <div class="team-card"><div class="team-avatar">RW</div><h3>Rick</h3><div class="team-role">Owner / Operator</div><p>Keeps the bays clean, the equipment running, and every visit quick and easy.</p></div>
           <div class="team-card"><div class="team-avatar">🚒</div><h3>The Firehouse Team</h3><div class="team-role">On-site crew</div><p>Friendly faces at every location, making sure your car — and your day — go smoothly.</p></div>
         </div>
@@ -423,7 +423,7 @@ const communityBody = `${pageHead("Community", "Proud to Serve Our Towns", "Fami
     </section>`;
 
 // ---------- contact ----------
-const contactBody = `${pageHead("Contact", "Ready When You Are", "Questions about a wash, a location, or a V.I.P. membership? Send us a note or give us a call.")}
+const contactBody = `${pageHead("Contact", "Ready When You Are", "Questions about a wash, a location, or a membership? Send us a note or give us a call.")}
     <section class="blk">
       <div class="wrap contact-grid">
         <div class="cform-wrap">
@@ -456,15 +456,15 @@ const contactBody = `${pageHead("Contact", "Ready When You Are", "Questions abou
 const pages = {
   "index.html": shell({
     title: "Firehouse Carwash | A Clean Car Says a Lot — Leamington, Lakeshore & Belle River",
-    desc: "Firehouse Carwash — self-serve bays, touch-free automatics, and power vacuums across Leamington, Lakeshore & Belle River. First-responder discounts and an unlimited V.I.P. wash club.",
+    desc: "Firehouse Carwash — self-serve bays, touch-free automatics, and power vacuums across Leamington, Lakeshore & Belle River. First-responder discounts and an unlimited wash club.",
     active: "home",
     body: `${homeHero}\n\n${finder}\n\n${highlights}\n\n${reviewsBand}\n\n${insiderBand}`,
   }),
   "plans.html": shell({
-    title: "Wash Plans & V.I.P. Membership | Firehouse Carwash",
-    desc: "Firehouse Carwash wash packages and the unlimited V.I.P. Wash Club — Basic, Deluxe, Ultimate, and V.I.P.",
+    title: "Wash Plans & Membership | Firehouse Carwash",
+    desc: "Firehouse Carwash wash packages and the unlimited Wash Club — 1 Alarm, 2 Alarm, 3 Alarm, and 3 Alarm+.",
     active: "plans",
-    body: `${pageHead("Wash Plans", "Pick Your Level of Shine", "From a quick Basic rinse to the unlimited V.I.P. Wash Club.")}\n\n${clubBand}\n\n${pricingBand}\n\n${carouselBand}`,
+    body: `${pageHead("Wash Plans", "Pick Your Level of Shine", "From a quick 1 Alarm wash to the unlimited Wash Club.")}\n\n${clubBand}\n\n${pricingBand}\n\n${carouselBand}`,
   }),
   "locations.html": shell({
     title: "Locations | Firehouse Carwash — Leamington, Lakeshore & Belle River",
@@ -498,7 +498,7 @@ const pages = {
   }),
   "contact.html": shell({
     title: "Contact | Firehouse Carwash",
-    desc: "Get in touch with Firehouse Carwash — questions about a wash, a location, or a V.I.P. membership.",
+    desc: "Get in touch with Firehouse Carwash — questions about a wash, a location, or a membership.",
     active: "contact",
     body: contactBody,
   }),
